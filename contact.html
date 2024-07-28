@@ -1,118 +1,126 @@
 <!DOCTYPE html>
 <html lang="ja">
-    <head>
-        <!-- ファビコンを指定 -->
-        <meta name="msapplication-square70x70logo" content="/site-tile-70x70.png">
-        <meta name="msapplication-square150x150logo" content="/site-tile-150x150.png">
-        <meta name="msapplication-wide310x150logo" content="/site-tile-310x150.png">
-        <meta name="msapplication-square310x310logo" content="/site-tile-310x310.png">
-        <meta name="msapplication-TileColor" content="#0078d7">
-        <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="https://karonyt.github.io/rpg/favicon/favicon.ico">
-        <link rel="icon" type="image/vnd.microsoft.icon" href="https://karonyt.github.io/rpg/favicon/favicon.ico">
-        <link rel="apple-touch-icon" sizes="57x57" href="https://karonyt.github.io/rpg/favicon/apple-touch-icon-57x57.png">
-        <link rel="apple-touch-icon" sizes="60x60" href="https://karonyt.github.io/rpg/favicon/apple-touch-icon-60x60.png">
-        <link rel="apple-touch-icon" sizes="72x72" href="https://karonyt.github.io/rpg/favicon/apple-touch-icon-72x72.png">
-        <link rel="apple-touch-icon" sizes="76x76" href="https://karonyt.github.io/rpg/favicon/apple-touch-icon-76x76.png">
-        <link rel="apple-touch-icon" sizes="114x114" href="https://karonyt.github.io/rpg/favicon/apple-touch-icon-114x114.png">
-        <link rel="apple-touch-icon" sizes="120x120" href="https://karonyt.github.io/rpg/favicon/apple-touch-icon-120x120.png">
-        <link rel="apple-touch-icon" sizes="144x144" href="https://karonyt.github.io/rpg/favicon/apple-touch-icon-144x144.png">
-        <link rel="apple-touch-icon" sizes="152x152" href="https://karonyt.github.io/rpg/favicon/apple-touch-icon-152x152.png">
-        <link rel="apple-touch-icon" sizes="180x180" href="https://karonyt.github.io/rpg/favicon/apple-touch-icon-180x180.png">
-        <link rel="icon" type="image/png" sizes="36x36" href="https://karonyt.github.io/rpg/favicon/android-chrome-36x36.png">
-        <link rel="icon" type="image/png" sizes="48x48" href="https://karonyt.github.io/rpg/favicon/android-chrome-48x48.png">
-        <link rel="icon" type="image/png" sizes="72x72" href="https://karonyt.github.io/rpg/favicon/android-chrome-72x72.png">
-        <link rel="icon" type="image/png" sizes="96x96" href="https://karonyt.github.io/rpg/favicon/android-chrome-96x96.png">
-        <link rel="icon" type="image/png" sizes="128x128" href="https://karonyt.github.io/rpg/favicon/android-chrome-128x128.png">
-        <link rel="icon" type="image/png" sizes="144x144" href="https://karonyt.github.io/rpg/favicon/android-chrome-144x144.png">
-        <link rel="icon" type="image/png" sizes="152x152" href="https://karonyt.github.io/rpg/favicon/android-chrome-152x152.png">
-        <link rel="icon" type="image/png" sizes="192x192" href="https://karonyt.github.io/rpg/favicon/android-chrome-192x192.png">
-        <link rel="icon" type="image/png" sizes="256x256" href="https://karonyt.github.io/rpg/favicon/android-chrome-256x256.png">
-        <link rel="icon" type="image/png" sizes="384x384" href="https://karonyt.github.io/rpg/favicon/android-chrome-384x384.png">
-        <link rel="icon" type="image/png" sizes="512x512" href="https://karonyt.github.io/rpg/favicon/android-chrome-512x512.png">
-        <link rel="icon" type="image/png" sizes="36x36" href="https://karonyt.github.io/rpg/favicon/icon-36x36.png">
-        <link rel="icon" type="image/png" sizes="48x48" href="https://karonyt.github.io/rpg/favicon/icon-48x48.png">
-        <link rel="icon" type="image/png" sizes="72x72" href="https://karonyt.github.io/rpg/favicon/icon-72x72.png">
-        <link rel="icon" type="image/png" sizes="96x96" href="https://karonyt.github.io/rpg/favicon/icon-96x96.png">
-        <link rel="icon" type="image/png" sizes="128x128" href="https://karonyt.github.io/rpg/favicon/icon-128x128.png">
-        <link rel="icon" type="image/png" sizes="144x144" href="https://karonyt.github.io/rpg/favicon/icon-144x144.png">
-        <link rel="icon" type="image/png" sizes="152x152" href="https://karonyt.github.io/rpg/favicon/icon-152x152.png">
-        <link rel="icon" type="image/png" sizes="160x160" href="https://karonyt.github.io/rpg/favicon/icon-160x160.png">
-        <link rel="icon" type="image/png" sizes="192x192" href="https://karonyt.github.io/rpg/favicon/icon-192x192.png">
-        <link rel="icon" type="image/png" sizes="196x196" href="https://karonyt.github.io/rpg/favicon/icon-196x196.png">
-        <link rel="icon" type="image/png" sizes="256x256" href="https://karonyt.github.io/rpg/favicon/icon-256x256.png">
-        <link rel="icon" type="image/png" sizes="384x384" href="https://karonyt.github.io/rpg/favicon/icon-384x384.png">
-        <link rel="icon" type="image/png" sizes="512x512" href="https://karonyt.github.io/rpg/favicon/icon-512x512.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="https://karonyt.github.io/rpg/favicon/icon-16x16.png">
-        <link rel="icon" type="image/png" sizes="24x24" href="https://karonyt.github.io/rpg/favicon/icon-24x24.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="https://karonyt.github.io/rpg/favicon/icon-32x32.png">
-        <link rel="manifest" href="https://karonyt.github.io/rpg/favicon/manifest.json">
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>お問い合わせ</title>
 
-        <!-- CSSファイルを指定 -->
-        <link rel="stylesheet" type="text/css" href="https://karonyt.github.io/rpg/global.css">
-    </head>
-    <body>
-        <!-- Header(上のやつ) -->
-        <header>
-            <!-- 背景の動画 -->
-            <video id="background-video" autoplay loop muted>
-                <source src="video.mp4" type="video/mp4">
-            </video>
-            <a id="mute-button" class="on" onclick="toggleMute()">
-                Sound:<span class="off-text">On</span>|<span class="on-text">Off</span>
-            </a>
-            <h1>IlluminaOrigin</h1>
-            <nav>
-                <ul><br class="sp">
-                    <li><a href="https://karonyt.github.io/rpg/index.html">ホーム</a></li>
-                    <li><a href="https://karonyt.github.io/rpg/info.html">情報</a></li>
-                    <li><a href="https://karonyt.github.io/rpg/developer.html">制作陣</a></li>
-                    <li><a href="https://karonyt.github.io/rpg/contact.html">お問い合わせ</a></li>
-                </ul>
-            </nav>
-        </header>
+<head>
+    <!-- ファビコンを指定 -->
+    <meta name="msapplication-square70x70logo" content="/site-tile-70x70.png">
+    <meta name="msapplication-square150x150logo" content="/site-tile-150x150.png">
+    <meta name="msapplication-wide310x150logo" content="/site-tile-310x150.png">
+    <meta name="msapplication-square310x310logo" content="/site-tile-310x310.png">
+    <meta name="msapplication-TileColor" content="#0078d7">
+    <link rel="shortcut icon" type="image/vnd.microsoft.icon"
+        href="https://karonyt.github.io/karoearth/favicon/favicon.ico">
+    <link rel="icon" type="image/vnd.microsoft.icon" href="https://karonyt.github.io/karoearth/favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="57x57"
+        href="https://karonyt.github.io/karoearth/favicon/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60"
+        href="https://karonyt.github.io/karoearth/favicon/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72"
+        href="https://karonyt.github.io/karoearth/favicon/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76"
+        href="https://karonyt.github.io/karoearth/favicon/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114"
+        href="https://karonyt.github.io/karoearth/favicon/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120"
+        href="https://karonyt.github.io/karoearth/favicon/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144"
+        href="https://karonyt.github.io/karoearth/favicon/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152"
+        href="https://karonyt.github.io/karoearth/favicon/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180"
+        href="https://karonyt.github.io/karoearth/favicon/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="36x36"
+        href="https://karonyt.github.io/karoearth/favicon/android-chrome-36x36.png">
+    <link rel="icon" type="image/png" sizes="48x48"
+        href="https://karonyt.github.io/karoearth/favicon/android-chrome-48x48.png">
+    <link rel="icon" type="image/png" sizes="72x72"
+        href="https://karonyt.github.io/karoearth/favicon/android-chrome-72x72.png">
+    <link rel="icon" type="image/png" sizes="96x96"
+        href="https://karonyt.github.io/karoearth/favicon/android-chrome-96x96.png">
+    <link rel="icon" type="image/png" sizes="128x128"
+        href="https://karonyt.github.io/karoearth/favicon/android-chrome-128x128.png">
+    <link rel="icon" type="image/png" sizes="144x144"
+        href="https://karonyt.github.io/karoearth/favicon/android-chrome-144x144.png">
+    <link rel="icon" type="image/png" sizes="152x152"
+        href="https://karonyt.github.io/karoearth/favicon/android-chrome-152x152.png">
+    <link rel="icon" type="image/png" sizes="192x192"
+        href="https://karonyt.github.io/karoearth/favicon/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="256x256"
+        href="https://karonyt.github.io/karoearth/favicon/android-chrome-256x256.png">
+    <link rel="icon" type="image/png" sizes="384x384"
+        href="https://karonyt.github.io/karoearth/favicon/android-chrome-384x384.png">
+    <link rel="icon" type="image/png" sizes="512x512"
+        href="https://karonyt.github.io/karoearth/favicon/android-chrome-512x512.png">
+    <link rel="icon" type="image/png" sizes="36x36" href="https://karonyt.github.io/karoearth/favicon/icon-36x36.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="https://karonyt.github.io/karoearth/favicon/icon-48x48.png">
+    <link rel="icon" type="image/png" sizes="72x72" href="https://karonyt.github.io/karoearth/favicon/icon-72x72.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="https://karonyt.github.io/karoearth/favicon/icon-96x96.png">
+    <link rel="icon" type="image/png" sizes="128x128"
+        href="https://karonyt.github.io/karoearth/favicon/icon-128x128.png">
+    <link rel="icon" type="image/png" sizes="144x144"
+        href="https://karonyt.github.io/karoearth/favicon/icon-144x144.png">
+    <link rel="icon" type="image/png" sizes="152x152"
+        href="https://karonyt.github.io/karoearth/favicon/icon-152x152.png">
+    <link rel="icon" type="image/png" sizes="160x160"
+        href="https://karonyt.github.io/karoearth/favicon/icon-160x160.png">
+    <link rel="icon" type="image/png" sizes="192x192"
+        href="https://karonyt.github.io/karoearth/favicon/icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="196x196"
+        href="https://karonyt.github.io/karoearth/favicon/icon-196x196.png">
+    <link rel="icon" type="image/png" sizes="256x256"
+        href="https://karonyt.github.io/karoearth/favicon/icon-256x256.png">
+    <link rel="icon" type="image/png" sizes="384x384"
+        href="https://karonyt.github.io/karoearth/favicon/icon-384x384.png">
+    <link rel="icon" type="image/png" sizes="512x512"
+        href="https://karonyt.github.io/karoearth/favicon/icon-512x512.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://karonyt.github.io/karoearth/favicon/icon-16x16.png">
+    <link rel="icon" type="image/png" sizes="24x24" href="https://karonyt.github.io/karoearth/favicon/icon-24x24.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://karonyt.github.io/karoearth/favicon/icon-32x32.png">
+    <link rel="manifest" href="https://karonyt.github.io/karoearth/favicon/manifest.json">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>規約</title>
 
-        <!-- メインの要素 -->        
-        <main>
-            <div class="fixed-element">
-                
-                <section class="scroll-animate-element">
-                    <h2>質問箱</h2>
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfSPo6D4O-Y7ttPurRFce1HkV_BScPGqoi1ZK-Esf_Z50UX1w/viewform">クリックして開く</a>
-                </section>
-                
-                <section class="scroll-animate-element">
-                    <h2>目安箱</h2>
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeNeZD-sE76cVH0WrdVe_DdTo4y7PXdmxrrC_0qoHqVzpGtRw/viewform">クリックして開く</a>
-                </section>
-    
-                <section class="scroll-animate-element">
-                    <h2>バグ報告</h2>
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSco9rG940idBOrrNbpp5r0VBmnePUMgGIheb-wY-e8K3iZl9Q/viewform">クリックして開く</a>
-                </section>
-    
-                <section class="scroll-animate-element">
-                    <h2>違反者報告</h2>
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfi1dJbQr6dd6ovCzMq6ZByvd_AR9H0hx4qmusXF3UFtF_4uw/viewform">クリックして開く</a>
-                </section>
-    
-                <section class="scroll-animate-element">
-                    <h2>その他サポート申請</h2>
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLScKdZoKOWmRrTRX0qLs05WZBCro17J5rRsdjO_75CEfHwxM3g/viewform">クリックして開く</a>
-                </section>
-              
-            </div>
-        </main>
+    <!-- CSSファイルを指定 -->
+    <link rel="stylesheet" type="text/css" href="https://karonyt.github.io/karoearth/global.css">
+</head>
 
-        <!-- Footerを設定 -->
-        <footer class="scroll-animate-element">
-            <p>&copy; 2023 IlluminaOrigin. All rights reserved.<br>Music by 舞音はく.<br>※当サービスは公式のMinecraftサービスではありません。</p>
-        </footer>
+<body>
+    <!-- Header(上のやつ) -->
+    <header>
+        <!-- 背景の動画 -->
+        <video id="background-video" autoplay loop muted>
+            <source src="video.mp4" type="video/mp4">
+        </video>
+        <a id="mute-button" class="on" onclick="toggleMute()">
+            Sound:<span class="off-text">On</span>|<span class="on-text">Off</span>
+        </a>
+        <h1>IlluminaOrigin</h1>
+        <nav>
+            <ul><br class="sp">
+                <li><a href="https://karonyt.github.io/karoearth/index.html">ホーム</a></li>
+                <li><a href="https://karonyt.github.io/karoearth/info.html">情報</a></li>
+                <li><a href="https://karonyt.github.io/karoearth/developer.html">運営</a></li>
+                <li><a href="https://karonyt.github.io/karoearth/rules.html">規約</a></li>
+            </ul>
+        </nav>
+    </header>
 
-        <!-- JavaScriptファイルを指定 -->
-        <script src="https://karonyt.github.io/rpg/global.js"></script>
-    </body>
+    <!-- メインの要素 -->
+    <main>
+        <div class="fixed-element">
+            Comming Soon...
+        </div>
+    </main>
+
+    <!-- Footerを設定 -->
+    <footer class="scroll-animate-element">
+        <p>&copy; 2024 KaronNetWork. All rights reserved.<br>※当サービスは公式のMinecraftサービスではありません。</p>
+    </footer>
+
+    <!-- JavaScriptファイルを指定 -->
+    <script src="https://karonyt.github.io/karoearth/global.js"></script>
+</body>
+
 </html>

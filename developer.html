@@ -1,548 +1,140 @@
 <!DOCTYPE html>
 <html lang="ja">
-    <head>
-        <!-- ファビコンを指定 -->
-        <meta name="msapplication-square70x70logo" content="/site-tile-70x70.png">
-        <meta name="msapplication-square150x150logo" content="/site-tile-150x150.png">
-        <meta name="msapplication-wide310x150logo" content="/site-tile-310x150.png">
-        <meta name="msapplication-square310x310logo" content="/site-tile-310x310.png">
-        <meta name="msapplication-TileColor" content="#0078d7">
-        <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="https://karonyt.github.io/rpg/favicon/favicon.ico">
-        <link rel="icon" type="image/vnd.microsoft.icon" href="https://karonyt.github.io/rpg/favicon/favicon.ico">
-        <link rel="apple-touch-icon" sizes="57x57" href="https://karonyt.github.io/rpg/favicon/apple-touch-icon-57x57.png">
-        <link rel="apple-touch-icon" sizes="60x60" href="https://karonyt.github.io/rpg/favicon/apple-touch-icon-60x60.png">
-        <link rel="apple-touch-icon" sizes="72x72" href="https://karonyt.github.io/rpg/favicon/apple-touch-icon-72x72.png">
-        <link rel="apple-touch-icon" sizes="76x76" href="https://karonyt.github.io/rpg/favicon/apple-touch-icon-76x76.png">
-        <link rel="apple-touch-icon" sizes="114x114" href="https://karonyt.github.io/rpg/favicon/apple-touch-icon-114x114.png">
-        <link rel="apple-touch-icon" sizes="120x120" href="https://karonyt.github.io/rpg/favicon/apple-touch-icon-120x120.png">
-        <link rel="apple-touch-icon" sizes="144x144" href="https://karonyt.github.io/rpg/favicon/apple-touch-icon-144x144.png">
-        <link rel="apple-touch-icon" sizes="152x152" href="https://karonyt.github.io/rpg/favicon/apple-touch-icon-152x152.png">
-        <link rel="apple-touch-icon" sizes="180x180" href="https://karonyt.github.io/rpg/favicon/apple-touch-icon-180x180.png">
-        <link rel="icon" type="image/png" sizes="36x36" href="https://karonyt.github.io/rpg/favicon/android-chrome-36x36.png">
-        <link rel="icon" type="image/png" sizes="48x48" href="https://karonyt.github.io/rpg/favicon/android-chrome-48x48.png">
-        <link rel="icon" type="image/png" sizes="72x72" href="https://karonyt.github.io/rpg/favicon/android-chrome-72x72.png">
-        <link rel="icon" type="image/png" sizes="96x96" href="https://karonyt.github.io/rpg/favicon/android-chrome-96x96.png">
-        <link rel="icon" type="image/png" sizes="128x128" href="https://karonyt.github.io/rpg/favicon/android-chrome-128x128.png">
-        <link rel="icon" type="image/png" sizes="144x144" href="https://karonyt.github.io/rpg/favicon/android-chrome-144x144.png">
-        <link rel="icon" type="image/png" sizes="152x152" href="https://karonyt.github.io/rpg/favicon/android-chrome-152x152.png">
-        <link rel="icon" type="image/png" sizes="192x192" href="https://karonyt.github.io/rpg/favicon/android-chrome-192x192.png">
-        <link rel="icon" type="image/png" sizes="256x256" href="https://karonyt.github.io/rpg/favicon/android-chrome-256x256.png">
-        <link rel="icon" type="image/png" sizes="384x384" href="https://karonyt.github.io/rpg/favicon/android-chrome-384x384.png">
-        <link rel="icon" type="image/png" sizes="512x512" href="https://karonyt.github.io/rpg/favicon/android-chrome-512x512.png">
-        <link rel="icon" type="image/png" sizes="36x36" href="https://karonyt.github.io/rpg/favicon/icon-36x36.png">
-        <link rel="icon" type="image/png" sizes="48x48" href="https://karonyt.github.io/rpg/favicon/icon-48x48.png">
-        <link rel="icon" type="image/png" sizes="72x72" href="https://karonyt.github.io/rpg/favicon/icon-72x72.png">
-        <link rel="icon" type="image/png" sizes="96x96" href="https://karonyt.github.io/rpg/favicon/icon-96x96.png">
-        <link rel="icon" type="image/png" sizes="128x128" href="https://karonyt.github.io/rpg/favicon/icon-128x128.png">
-        <link rel="icon" type="image/png" sizes="144x144" href="https://karonyt.github.io/rpg/favicon/icon-144x144.png">
-        <link rel="icon" type="image/png" sizes="152x152" href="https://karonyt.github.io/rpg/favicon/icon-152x152.png">
-        <link rel="icon" type="image/png" sizes="160x160" href="https://karonyt.github.io/rpg/favicon/icon-160x160.png">
-        <link rel="icon" type="image/png" sizes="192x192" href="https://karonyt.github.io/rpg/favicon/icon-192x192.png">
-        <link rel="icon" type="image/png" sizes="196x196" href="https://karonyt.github.io/rpg/favicon/icon-196x196.png">
-        <link rel="icon" type="image/png" sizes="256x256" href="https://karonyt.github.io/rpg/favicon/icon-256x256.png">
-        <link rel="icon" type="image/png" sizes="384x384" href="https://karonyt.github.io/rpg/favicon/icon-384x384.png">
-        <link rel="icon" type="image/png" sizes="512x512" href="https://karonyt.github.io/rpg/favicon/icon-512x512.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="https://karonyt.github.io/rpg/favicon/icon-16x16.png">
-        <link rel="icon" type="image/png" sizes="24x24" href="https://karonyt.github.io/rpg/favicon/icon-24x24.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="https://karonyt.github.io/rpg/favicon/icon-32x32.png">
-        <link rel="manifest" href="https://karonyt.github.io/rpg/favicon/manifest.json">
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>制作陣紹介</title>
 
-        <!-- CSSファイルを指定 -->
-        <link rel="stylesheet" type="text/css" href="https://karonyt.github.io/rpg/global.css">
-    </head>
-    <body>
-        <!-- Header(上のやつ) -->
-        <header>
-            <!-- 背景の動画 -->
-            <video id="background-video" autoplay loop muted>
-                <source src="video.mp4" type="video/mp4">
-            </video>
-            <a id="mute-button" class="on" onclick="toggleMute()">
-                Sound:<span class="off-text">On</span>|<span class="on-text">Off</span>
-            </a>
-            <h1>IlluminaOrigin</h1>
-            <nav>
-                <ul><br class="sp">
-                    <li><a href="https://karonyt.github.io/rpg/index.html">ホーム</a></li>
-                    <li><a href="https://karonyt.github.io/rpg/info.html">情報</a></li>
-                    <li><a href="https://karonyt.github.io/rpg/developer.html">制作陣</a></li>
-                    <li><a href="https://karonyt.github.io/rpg/contact.html">お問い合わせ</a></li>
-                </ul>
-            </nav>
-        </header>
+<head>
+    <!-- ファビコンを指定 -->
+    <meta name="msapplication-square70x70logo" content="/site-tile-70x70.png">
+    <meta name="msapplication-square150x150logo" content="/site-tile-150x150.png">
+    <meta name="msapplication-wide310x150logo" content="/site-tile-310x150.png">
+    <meta name="msapplication-square310x310logo" content="/site-tile-310x310.png">
+    <meta name="msapplication-TileColor" content="#0078d7">
+    <link rel="shortcut icon" type="image/vnd.microsoft.icon"
+        href="https://karonyt.github.io/karoearth/favicon/favicon.ico">
+    <link rel="icon" type="image/vnd.microsoft.icon" href="https://karonyt.github.io/karoearth/favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="57x57"
+        href="https://karonyt.github.io/karoearth/favicon/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60"
+        href="https://karonyt.github.io/karoearth/favicon/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72"
+        href="https://karonyt.github.io/karoearth/favicon/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76"
+        href="https://karonyt.github.io/karoearth/favicon/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114"
+        href="https://karonyt.github.io/karoearth/favicon/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120"
+        href="https://karonyt.github.io/karoearth/favicon/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144"
+        href="https://karonyt.github.io/karoearth/favicon/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152"
+        href="https://karonyt.github.io/karoearth/favicon/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180"
+        href="https://karonyt.github.io/karoearth/favicon/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="36x36"
+        href="https://karonyt.github.io/karoearth/favicon/android-chrome-36x36.png">
+    <link rel="icon" type="image/png" sizes="48x48"
+        href="https://karonyt.github.io/karoearth/favicon/android-chrome-48x48.png">
+    <link rel="icon" type="image/png" sizes="72x72"
+        href="https://karonyt.github.io/karoearth/favicon/android-chrome-72x72.png">
+    <link rel="icon" type="image/png" sizes="96x96"
+        href="https://karonyt.github.io/karoearth/favicon/android-chrome-96x96.png">
+    <link rel="icon" type="image/png" sizes="128x128"
+        href="https://karonyt.github.io/karoearth/favicon/android-chrome-128x128.png">
+    <link rel="icon" type="image/png" sizes="144x144"
+        href="https://karonyt.github.io/karoearth/favicon/android-chrome-144x144.png">
+    <link rel="icon" type="image/png" sizes="152x152"
+        href="https://karonyt.github.io/karoearth/favicon/android-chrome-152x152.png">
+    <link rel="icon" type="image/png" sizes="192x192"
+        href="https://karonyt.github.io/karoearth/favicon/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="256x256"
+        href="https://karonyt.github.io/karoearth/favicon/android-chrome-256x256.png">
+    <link rel="icon" type="image/png" sizes="384x384"
+        href="https://karonyt.github.io/karoearth/favicon/android-chrome-384x384.png">
+    <link rel="icon" type="image/png" sizes="512x512"
+        href="https://karonyt.github.io/karoearth/favicon/android-chrome-512x512.png">
+    <link rel="icon" type="image/png" sizes="36x36" href="https://karonyt.github.io/karoearth/favicon/icon-36x36.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="https://karonyt.github.io/karoearth/favicon/icon-48x48.png">
+    <link rel="icon" type="image/png" sizes="72x72" href="https://karonyt.github.io/karoearth/favicon/icon-72x72.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="https://karonyt.github.io/karoearth/favicon/icon-96x96.png">
+    <link rel="icon" type="image/png" sizes="128x128"
+        href="https://karonyt.github.io/karoearth/favicon/icon-128x128.png">
+    <link rel="icon" type="image/png" sizes="144x144"
+        href="https://karonyt.github.io/karoearth/favicon/icon-144x144.png">
+    <link rel="icon" type="image/png" sizes="152x152"
+        href="https://karonyt.github.io/karoearth/favicon/icon-152x152.png">
+    <link rel="icon" type="image/png" sizes="160x160"
+        href="https://karonyt.github.io/karoearth/favicon/icon-160x160.png">
+    <link rel="icon" type="image/png" sizes="192x192"
+        href="https://karonyt.github.io/karoearth/favicon/icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="196x196"
+        href="https://karonyt.github.io/karoearth/favicon/icon-196x196.png">
+    <link rel="icon" type="image/png" sizes="256x256"
+        href="https://karonyt.github.io/karoearth/favicon/icon-256x256.png">
+    <link rel="icon" type="image/png" sizes="384x384"
+        href="https://karonyt.github.io/karoearth/favicon/icon-384x384.png">
+    <link rel="icon" type="image/png" sizes="512x512"
+        href="https://karonyt.github.io/karoearth/favicon/icon-512x512.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://karonyt.github.io/karoearth/favicon/icon-16x16.png">
+    <link rel="icon" type="image/png" sizes="24x24" href="https://karonyt.github.io/karoearth/favicon/icon-24x24.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://karonyt.github.io/karoearth/favicon/icon-32x32.png">
+    <link rel="manifest" href="https://karonyt.github.io/karoearth/favicon/manifest.json">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>運営</title>
 
-        <!-- メインの要素 -->        
-        <main>
-            
-            <!-- Admin -->
-            
-            <section class="scroll-animate-element">
+    <!-- CSSファイルを指定 -->
+    <link rel="stylesheet" type="text/css" href="https://karonyt.github.io/karoearth/global.css">
+</head>
 
-                <h2>Admin</h2>
+<body>
+    <!-- Header(上のやつ) -->
+    <header>
+        <!-- 背景の動画 -->
+        <video id="background-video" autoplay loop muted>
+            <source src="video.mp4" type="video/mp4">
+        </video>
+        <a id="mute-button" class="on" onclick="toggleMute()">
+            Sound:<span class="off-text">On</span>|<span class="on-text">Off</span>
+        </a>
+        <h1>IlluminaOrigin</h1>
+        <nav>
+            <ul><br class="sp">
+                <li><a href="https://karonyt.github.io/karoearth/index.html">ホーム</a></li>
+                <li><a href="https://karonyt.github.io/karoearth/info.html">情報</a></li>
+                <li><a href="https://karonyt.github.io/karoearth/developer.html">運営</a></li>
+                <li><a href="https://karonyt.github.io/karoearth/rules.html">規約</a></li>
+            </ul>
+        </nav>
+    </header>
 
-                <div class="team-member">
-                    <img src="image/karon.png">
-                    <div>
-                        <h3>かろん</h3>
-                        <p>無能。一応鯖主だが色々やったりしているので実質雑用。開発チームへの勧誘、チーム管理、サイトなどを担当。</p>
-                    </div>
-                </div>
+    <!-- メインの要素 -->
+    <main>
 
-                <div class="team-member">
-                    <img src="image/yuki.png">
-                    <div>
-                        <h3>yuki</h3>
-                        <p>天才。次の鯖主に選ばれるとしたら彼だろう。システムのほとんどを担当している。</p>
-                    </div>
-                </div>
+        <!-- Admin -->
 
-                <div class="team-member">
-                    <img src="image/kurou.webp">
-                    <div>
-                        <h3>くろう</h3>
-                        <p>某RPG鯖の鯖主。RPG制作経験がありRPGに詳しい。UI以外全般行ける心強い人。</p>
-                    </div>
-                </div>
+        <section class="scroll-animate-element">
 
-                <div class="team-member">
-                    <img src="image/osk.webp">
-                    <div>
-                        <h3>osk</h3>
-                        <p>コマンド系Youtuber。パーティクルなどリソースパック関係を担当。モデリングは現在修行中。</p>
-                    </div>
-                </div>
+            <h2>鯖主</h2>
 
-                <div class="team-member">
-                    <img src="image/yunia.webp">
-                    <div>
-                        <h3>ユニア</h3>
-                        <p>優秀な雑用。基本的に夜行性なので夜中に何かあったら彼に連絡をするとよい。</p>
-                    </div>
+            <div class="team-member">
+                <img src="image/karon.png">
+                <div>
+                    <h3>かろん</h3>
+                    <p>MakeCountry開発者。</p>
                 </div>
-    
-                <div class="team-member">
-                    <img src="image/pollo.webp">
-                    <div>
-                        <h3>Pollo</h3>
-                        <p>緊急時の対応を任されている。基本的になんでもそこそこできる。起きてる時間帯は不規則。</p>
-                    </div>
-                </div>
+            </div>
 
-            </section>
-          
-            <!-- 技術部 -->
-            <section class="scroll-animate-element">
+        </section>
 
-                <h2>技術部</h2>
-    
-                <div class="team-member">
-                    <img src="image/alpha.png">
-                    <div>
-                        <h3>あるふぁ</h3>
-                        <p>JavaScript勉強中。特技はタイピング。今後の技術部を担っていく若い人材。</p>
-                    </div>
-                </div>
+    </main>
 
-                <div class="team-member">
-                    <img src="image/okaka.png">
-                    <div>
-                        <h3>おかか</h3>
-                        <p>技術部副リーダー。yukiからの推薦で入った優秀な人。やる気で溢れている。jsはかろんの100倍はできる。</p>
-                    </div>
-                </div>
+    <!-- Footerを設定 -->
+    <footer class="scroll-animate-element">
+        <p>&copy; 2024 KaronNetWork. All rights reserved.<br>※当サービスは公式のMinecraftサービスではありません。</p>
+    </footer>
 
-                <div class="team-member">
-                    <img src="image/tikokunn.png">
-                    <div>
-                        <h3>チコくん</h3>
-                        <p> JSON UIとJavaScriptができるというイルミナに必要不可欠な人材。かろんやyukiから神と呼ばれている。</p>
-                    </div>
-                </div>
+    <!-- JavaScriptファイルを指定 -->
+    <script src="https://karonyt.github.io/karoearth/global.js"></script>
+</body>
 
-            </section>
-    
-            <!-- 建築部 -->
-            <section class="scroll-animate-element">
-
-                <h2>建築部</h2>
-    
-                <div class="team-member">
-                    <img src="image/izanami.webp">
-                    <div>
-                        <h3>イザナミ</h3>
-                        <p>イルミナ建築部リーダー。人脈を活かして建築部に人をたくさん勧誘してくれた。モデレーター長もやってくれている。</p>
-                    </div>
-                </div>
-
-                <div class="team-member">
-                    <img src="image/nodoka.webp">
-                    <div>
-                        <h3>Nodoka</h3>
-                        <p>城を作るのが得意でデザインもできる超人。本業で動画やデザインのお仕事をしている。とても忙しいのにいつも頑張ってくれている聖人。かっこいい。マイクラ歴は長くないが神建築をしてくれる。イルミナ建築部の主力。</p>
-                    </div>
-                </div>
-    
-                <div class="team-member">
-                    <img src="image/harusann.webp">
-                    <div>
-                        <h3>はるさん</h3>
-                        <p>建築部の副リーダーで企画部もやっている。マイクラRPG経験はかなりあるため、その経験をイルミナに活かしている。</p>
-                    </div>
-                </div>
-
-                <div class="team-member">
-                    <img src="image/banna.webp">
-                    <div>
-                        <h3>バンナ</h3>
-                        <p>建築を最近練習している。筋肉が制作班の中で一番あると噂されている。現在忙しいため失踪中。</p>
-                    </div>
-                </div>
-    
-                <div class="team-member">
-                    <img src="image/yakitori.webp">
-                    <div>
-                        <h3>焼き鳥</h3>
-                        <p>サイトを作れる焼き鳥。忙しい為、このサイトの設計には携われなかった。イルミナでは建築を担当。大人気サバイバル鯖「すずめサーバー」の鯖主。</p>
-                    </div>
-                </div>
-
-                <div class="team-member">
-                    <img src="image/onebit.webp">
-                    <div>
-                        <h3>ONEBIT</h3>
-                        <p>建築部だがJava版のMODも作れる方。建築部の人集めにとても貢献してくれた。</p>
-                    </div>
-                </div>
-    
-                <div class="team-member">
-                    <img src="image/cripan.jpg">
-                    <div>
-                        <h3>クリパン</h3>
-                        <p>テストが近づくとマイクラをやりたくなる人。その気持ちはとてもわかる。</p>
-                    </div>
-                </div>
-    
-                <div class="team-member">
-                    <img src="image/marble.jpg">
-                    <div>
-                        <h3>marble</h3>
-                        <p>開発チームの"可愛らしさ"担当。JE・BEどちらとも出来る建築勢。しかもサバイバルガチ勢。鯖主に対してちょっと反抗期。ちなみに歌を歌うのがとても上手。</p>
-                    </div>
-                </div>
-    
-                <div class="team-member">
-                    <img src="image/neboko.webp">
-                    <div>
-                        <h3>ねぼコ</h3>
-                        <p>自己紹介『本業はインテリア、内装デザインです。PCが粗大ごみ級なのでいつ浮上できなくなるか分かったもんじゃありません。なかよくしてね』<br>現在PCの調子が悪く浮上できてない模様。</p>
-                    </div>
-                </div>
-
-                <div class="team-member">
-                    <img src="image/sakuraakane.png">
-                    <div>
-                        <h3>あかね</h3>
-                        <p>和風建築が得意な方。忙しい中でロビーを作ってくれている。</p>
-                    </div>
-                </div>
-
-                <div class="team-member">
-                    <img src="image/tkr.png">
-                    <div>
-                        <h3>TKR711</h3>
-                        <p>タイピングと建築(洋風、和風(?)、道、地形)が特技。マイクラ歴は6年とかなり長い。浮上は多くないが頑張ってくれている。</p>
-                    </div>
-                </div>
-
-                <div class="team-member">
-                    <img src="image/salt.png">
-                    <div>
-                        <h3>塩games</h3>
-                        <p>建築部副リーダー。かろんに連れてこられた。建築を合わせるのが得意で浮上頻度もかなり高い!! Youtubeも頑張っていて、登録者数は1万人超え。</p>
-                    </div>
-                </div>
-
-                <div class="team-member">
-                    <img src="image/tenten.png">
-                    <div>
-                        <h3>cyαnsh∞ter28</h3>
-                        <p>自称猫。人力botの生みの親。イルミナではアスレを担当。余談だが、かろんとはかなり昔から知り合いだった。</p>
-                    </div>
-                </div>
-
-                <div class="team-member">
-                    <img src="image/nashi.png">
-                    <div>
-                        <h3>梨</h3>
-                        <p>複雑なファンタジー建築が得意でミステリアスな人。</p>
-                    </div>
-                </div>
-
-                <div class="team-member">
-                    <img src="image/mirako.png">
-                    <div>
-                        <h3>ミラコ</h3>
-                        <p>建築が特技の元気で明るい方。</p>
-                    </div>
-                </div>
-                
-                <div class="team-member">
-                    <img src="image/uirou.png">
-                    <div>
-                        <h3>ウイロウ</h3>
-                        <p>一番好きな曲は『雨き声残響』。特技はバスケットボールと単純作業。好きな動物はネコ。</p>
-                    </div>
-                </div>
-                
-                <div class="team-member">
-                    <img src="image/noimage.png">
-                    <div>
-                        <h3>sulipe</h3>
-                        <p>趣味は音楽(HIPHOP)作曲。FPSが上手。今はスペイン語を勉強中。イルミナでは内装のお手伝いをしてくれる。</p>
-                    </div>
-                </div>
-                
-                <div class="team-member">
-                    <img src="image/kuromitsu.png">
-                    <div>
-                        <h3>黒蜜</h3>
-                        <p>みんなの神戸市民。特技は山登り、長距離走、建築。あまり浮上できないが頑張ってくれる。</p>
-                    </div>
-                </div>
-                
-                <div class="team-member">
-                    <img src="image/yukidaruma.png">
-                    <div>
-                        <h3>雪だるま</h3>
-                        <p>特技は滑ること。建築は発展途上らしい。</p>
-                    </div>
-                </div>
-                
-                <div class="team-member">
-                    <img src="image/ia.png">
-                    <div>
-                        <h3>あいえー</h3>
-                        <p>特技は建築とお菓子作ること。趣味で建築して遊んでるのであんまり行けないらしい🌧️💦</p>
-                    </div>
-                </div>
-                
-                <div class="team-member">
-                    <img src="image/oisii.png">
-                    <div>
-                        <h3>oisii_0141</h3>
-                        <p>内装が得意で人間性も良い人。</p>
-                    </div>
-                </div>
-                
-                <div class="team-member">
-                    <img src="image/pikataso.gif">
-                    <div>
-                        <h3>pikataso</h3>
-                        <p></p>
-                    </div>
-                </div>
-                
-                <div class="team-member">
-                    <img src="image/huyusame.png">
-                    <div>
-                        <h3>冬雨</h3>
-                        <p>大人気地球生活鯖『ららEarth』の元Adminで、かろんに連れてこられた。建築の腕は素晴らしく撮影も得意。特技はスクショ、妄想、飛行機飛ばし。</p>
-                    </div>
-                </div>
-
-                <div class="team-member">
-                    <img src="image/nissi.png">
-                    <div>
-                        <h3>Nissiー</h3>
-                        <p>大人気地球生活鯖『ららEarth』のAdminで、かろんに連れてこられた。趣味はゲーム、パソコン、図画工作。好きな食べ物は納豆とチョコ。プラグインの知識も豊富。<br>一言『Nissiーと申しますm(_ _)m<br>建築のお手伝いでかろんさんに呼ばれました。<br>よろしくお願いいたします。』</p>
-                    </div>
-                </div>
-                
-                <div class="team-member">
-                    <img src="image/nanasiro.png">
-                    <div>
-                        <h3>七白</h3>
-                        <p>マイクラ歴9年のベテラン。和風建築や軍事系空想建築が得意で洋風建築は苦手。得意分野の中でも小型、中型が特にできるとのこと。さらにコマンドも出来るらしい。</p>
-                    </div>
-                </div>
-                
-                <div class="team-member">
-                    <img src="image/marumaru.png">
-                    <div>
-                        <h3>○○</h3>
-                        <p></p>
-                    </div>
-                </div>
-                
-                <div class="team-member">
-                    <img src="image/faru.png">
-                    <div>
-                        <h3>ふぁる</h3>
-                        <p>年中ゲームしてる暇人。建築歴は3年半。特技はファンタジー建築で曲線が大好き。一言『頭痛が痛くてきゃぴてぃす』</p>
-                    </div>
-                </div>
-                
-                <div class="team-member">
-                    <img src="image/shimakaze.jpg">
-                    <div>
-                        <h3>なんか早い駆逐艦</h3>
-                        <p>軍事関係が得意でイルミナでも軍事関係のものを担当している。アーマードコアが大好き。色んな人から思想が強いと言われているらしい。</p>
-                    </div>
-                </div>
-
-                <div class="team-member">
-                    <img src="image/spiny.png">
-                    <div>
-                        <h3>すぴぬ</h3>
-                        <p></p>
-                    </div>
-                </div>
-                                
-                <div class="team-member">
-                    <img src="image/threestraw.png">
-                    <div>
-                        <h3>ThreeStraw</h3>
-                        <p>Optifineのリソースパック製作ができる技術者。他のサーバーではモデレーターなどもやっている。一言『暑いのは嫌い』</p>
-                    </div>
-                </div>
-
-            </section>
-    
-            <!-- デザイン部 -->
-            <section class="scroll-animate-element">
-
-                <h2>デザイン部</h2>
-    
-                <div class="team-member">
-                    <img src="image/sekaitizu.jpg">
-                    <div>
-                        <h3>世界地図</h3>
-                        <p>ツイ廃のネギ回し職人。特技はC#、無理やり夜ふかし。かろんに連れてこられた。</p>
-                    </div>
-                </div>
-
-                <div class="team-member">
-                    <img src="image/yu.webp">
-                    <div>
-                        <h3>YU</h3>
-                        <p>イラスト描ける人。本人から一言『色々頑張るなっしいいいいい』</p>
-                    </div>
-                </div>
-
-                <div class="team-member">
-                    <img src="image/ioio.png">
-                    <div>
-                        <h3>io10io10io10io</h3>
-                        <p>ちょっとしたドット絵とか書くことが特技。最近はマイクラでPVPとサバイバルをしている。</p>
-                    </div>
-                </div>
-    
-                <div class="team-member">
-                    <img src="image/nuetiti.webp">
-                    <div>
-                        <h3>ぬえちち</h3>
-                        <p>3Dモデルがえげつない。神の領域。さらにテクスチャも描ける。リソースパックの神。</p>
-                    </div>
-                </div>
-    
-                <div class="team-member">
-                    <img src="image/risu.png">
-                    <div>
-                        <h3>りす</h3>
-                        <p>特技は作曲、デザイン。かろんとリアルで遊んだことがある数少ない人(片手の指で数えるくらいしかいない)<br>イルミナでは主にアイテムなどのテクスチャを担当。</p>
-                    </div>
-                </div>
-    
-                <div class="team-member">
-                    <img src="image/kitune.webp">
-                    <div>
-                        <h3>きつね</h3>
-                        <p>3Dアニメーションができて普段はJEでハイクオリティの職業PvPを作っている。多忙であまり浮上できないが頑張っている。素晴らしい人格者。高身長で声が凄くかっこいい。かろんは彼のことを凄く尊敬&信頼している。</p>
-                    </div>
-                </div>
-
-            </section>
-
-            <section class="scroll-animate-element">
-
-                <h2>企画部</h2>
-
-                <div class="team-member">
-                    <img src="image/kyabetsunegi.png">
-                    <div>
-                        <h3>KyabetsuNegi</h3>
-                        <p>企画部リーダー。発想が凄い人。企画部のリーダーをこなしつつ、建築もしている(得意なのはファンタジー、地形、地下)。さらにイルミナの建築サーバーを建ててくれている。彼女がいなければイルミナの制作は止まっていただろう...</p>
-                    </div>
-                </div>
-
-                <div class="team-member">
-                    <img src="image/karikari.png">
-                    <div>
-                        <h3>かりかり</h3>
-                        <p>企画部副リーダー。イルミナへの愛が凄い人。ロゴやミニキャラ絵や曲やゲームを作ったり小説を執筆している。一部の設定とKaronNetWorkのロゴを作っているのも彼女。さらに公式サイトの記事、会議のイラストなど主体的に色々やってくれている。</p>
-                    </div>
-                </div>
-
-                <div class="team-member">
-                    <img src="image/emukunn.png">
-                    <div>
-                        <h3>M Wizard</h3>
-                        <p>RPGが大好き。ストーリー構成を考えたり妄想をするのが特技。これから冒険する旅人の方々が楽しめるよう頑張りたいと思っている。</p>
-                    </div>
-                </div>
-
-                <div class="team-member">
-                    <img src="image/rimimi.png">
-                    <div>
-                        <h3>りみみ</h3>
-                        <p>特技は作業や設定の妄想。本人からの一言『たまに忙しくてお亡くなりする時もありますが活動頑張ります(`･ω･´)ゞ』</p>
-                    </div>
-                </div>
-
-                <div class="team-member">
-                    <img src="image/pand.png">
-                    <div>
-                        <h3>Pand</h3>
-                        <p>マイクラ歴8年で大人気RPG鯖「ネバーランドRPG」の運営もしているベテラン。かろんとはかなり昔からの友達。ストーリーなら任せてくれと言っているため心強い。</p>
-                    </div>
-                </div>
-
-                <div class="team-member">
-                    <img src="image/mayonee.png">
-                    <div>
-                        <h3>まよねえ</h3>
-                        <p>大人気銃ミニゲームワールド「MidRay」の鯖主。忙しいためイルミナでは企画部に入った。基本的に忙しいため浮上は少なめである。</p>
-                    </div>
-                </div>
-
-            </section>
-
-            <!-- 音楽担当 -->
-            <section class="scroll-animate-element">
-                <h2>音楽担当</h2>
-    
-                <div class="team-member">
-                    <img src="image/hakumai.jpg">
-                    <div>
-                        <h3>舞音はく</h3>
-                        <p>IlluminaOriginの曲『Rise of Illumina』を作ってくれた人。このサイトでも流れている。本人から一言『こんにちは、舞音はくです。趣味で音楽作ってます』</p>
-                    </div>
-                </div>
-
-            </section>
-            
-        </main>
-
-        <!-- Footerを設定 -->
-        <footer class="scroll-animate-element">
-            <p>&copy; 2023 IlluminaOrigin. All rights reserved.<br>Music by 舞音はく.<br>※当サービスは公式のMinecraftサービスではありません。</p>
-        </footer>
-
-        <!-- JavaScriptファイルを指定 -->
-        <script src="https://karonyt.github.io/rpg/global.js"></script>
-    </body>
 </html>
