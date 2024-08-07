@@ -80,18 +80,43 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KaroEarth</title>
+    <title>サーバー停止に関して|KaroEarth</title>
 
     <!-- CSSファイルを指定 -->
     <link rel="stylesheet" type="text/css" href="https://karonyt.github.io/karoearth/global.css">
 </head>
+<style>
+    .empty-space {
+        height: 100vh;
+    }
+
+    main {
+        background-color: rgba(0, 0, 0, 0.5);
+        display: flex;
+        align-items: center;
+        padding: 20px;
+        margin-left: 50px;
+        /* 左側に50pxのマージンを追加 */
+        margin-right: 50px;
+        /* 右側に50pxのマージンを追加 */
+    }
+
+    @media screen and (max-width: 767px) {
+        main {
+            margin-left: 20px;
+            /* 左側に20pxのマージンを追加 */
+            margin-right: 20px;
+            /* 右側に20pxのマージンを追加 */
+        }
+    }
+</style>
 
 <body>
     <!-- Header(上のやつ) -->
     <header>
         <!-- 背景の動画 -->
         <video id="background-video" autoplay loop muted>
-            <source src="video.mp4" type="video/mp4">
+            <source src="https://karonyt.github.io/karoearth/video.mp4" type="video/mp4">
         </video>
         <!--
         <a id="mute-button" class="on" onclick="toggleMute()">
@@ -108,48 +133,37 @@
             </ul>
         </nav>
     </header>
-    <div class="empty-space">
-        <p>Welcome to our server!!</p>
-    </div>
+    <div class="air-space"></div>
 
     <!-- メインの要素 -->
     <main>
-        <!--
-        <a href="https://karonyt.github.io/karoearth">
-            <img id="start-image" class="sp" src="logo_sp.png">
-            <img id="start-image" class="pc" src="logo.png">
-            <img id="start-image" class="tb" src="logo_tb.png">
-        </a>
-        -->
-        <div class="fixed-element">
-
+        <div>
             <section class="scroll-animate-element">
-                <h2>かろEarth</h2>
-                <p>1:1000の縮尺で地球を再現したワールドで人々は国を建て、それぞれの信念に従い国を治める</p>
+                <!-- 記事のタイトル -->
+                <h2>8/6 1:50頃からのサーバー停止に関する現状報告と謝罪</h2>
+                <!-- 記事の内容 -->
+                <p>皆様、こんにちは。KaronNetWork代表のかろんです。いつもかろEarthをご利用いただき、誠にありがとうございます。今回は、現在発生しているサーバー障害について、詳細な状況報告とお詫びを申し上げます。<br>
+                    <br>
+                    発生した障害の詳細<br>
+                    2024年8月6日午前1時50分頃、かろEarthのサーバーが突然停止し、全てのサービスが利用できない状況となりました。このときのサーバー停止の原因は、ららぁ氏によるサーバー移行作業の開始に起因しています。従来のサーバーから別のサーバー機への移行を開始した際にサーバーが停止したようです。<br>
+                    <br>
+                    そして2024年8月6日午後9時10分頃、MultiCoreにて、ららぁ氏より移行したサーバー機において重大な不具合が発生したとの報告がありました。<br>
+                    <br>
+                    この不具合は、プロキシサーバーに関する重大なものであり、それに伴いサーバー起動が正常に行えない状況となっています。通常であれば、移行作業中にも短時間でのダウンタイムを計画しておりましたが、予期せぬ技術的な問題が発生し、現時点でも解決に至っておりません。<br>
+                    <br>
+                    現在の状況と対応<br>
+                    ららぁ氏は、問題の特定と修正に向けて全力を尽くしております。しかしながら、今回の不具合は想定以上に深刻であり、慎重な調査と対応が必要となっています。現状では、具体的な再開時刻をお知らせすることができない状況です。<br>
+                    <br>
+                    復旧作業の進捗状況については、随時皆様にご報告いたします。当公式ウェブサイトやSNSを通じて最新情報を提供してまいりますので、ご確認いただければ幸いです。<br>
+                    <br>
+                    今回の障害により、長期間にわたって皆様にご不便とご迷惑をおかけしておりますことを、深くお詫び申し上げます。私たち運営チーム一同、かろEarthのサービスをより良いものにするために、日々努力を重ねております。今回の障害を通じて、改めてサーバーの安定運用と皆様へのサービス提供の重要性を痛感いたしました。<br>
+                    <br>
+                    皆様のご理解とご協力に感謝申し上げますとともに、かろEarthが再び皆様の楽しい交流の場となるよう、全力で取り組んでまいります。今後ともKaronNetWorkとその関連プロジェクトをよろしくお願いいたします。<br>
+                    <br>
+                    KaronNetWork代表 かろん<br>
+                    2024年8月7日<br>
+                </p>
             </section>
-
-            <section class="scroll-animate-element">
-                <h2>今までにない体験を...</h2>
-                <p>統合版では珍しいリアルタイムマップ等の独自技術の開発を行い今までにないサービスを提供。新鮮味あふれる時間を楽しめる。</p>
-            </section>
-
-            <!-- 最新のお知らせを3つ書こう -->
-            <section class="scroll-animate-element">
-                <h2>最新情報</h2>
-                <ul>
-                    <li><a href="https://karonyt.github.io/karoearth/articles/0001.html">8/6 1:50頃からのサーバー停止に関する現状報告と謝罪</a></li>
-                </ul>
-            </section>
-
-            <section class="scroll-animate-element">
-                <h2>さぁキミも国を建てよう！</h2>
-                <ul>
-                    <li><a href="https://twitter.com/karonnetwork">公式Twitter</a></li>
-                    <li><a href="https://discord.gg/2uqQjBPKvw">公式Discord</a></li>
-                    <li>リアルタイムマップ Comming Soon...</a></li>
-                </ul>
-            </section>
-
         </div>
     </main>
 
