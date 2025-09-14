@@ -1,165 +1,18 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ja">
-
 <head>
-    <!-- ファビコンを指定 -->
-    <meta name="msapplication-square70x70logo" content="/site-tile-70x70.png">
-    <meta name="msapplication-square150x150logo" content="/site-tile-150x150.png">
-    <meta name="msapplication-wide310x150logo" content="/site-tile-310x150.png">
-    <meta name="msapplication-square310x310logo" content="/site-tile-310x310.png">
-    <meta name="msapplication-TileColor" content="#0078d7">
-    <link rel="shortcut icon" type="image/vnd.microsoft.icon"
-        href="https://karon.jp/karoearth/favicon/favicon.ico">
-    <link rel="icon" type="image/vnd.microsoft.icon" href="https://karon.jp/karoearth/favicon/favicon.ico">
-    <link rel="apple-touch-icon" sizes="57x57"
-        href="https://karon.jp/karoearth/favicon/apple-touch-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60"
-        href="https://karon.jp/karoearth/favicon/apple-touch-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72"
-        href="https://karon.jp/karoearth/favicon/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76"
-        href="https://karon.jp/karoearth/favicon/apple-touch-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114"
-        href="https://karon.jp/karoearth/favicon/apple-touch-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120"
-        href="https://karon.jp/karoearth/favicon/apple-touch-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144"
-        href="https://karon.jp/karoearth/favicon/apple-touch-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152"
-        href="https://karon.jp/karoearth/favicon/apple-touch-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180"
-        href="https://karon.jp/karoearth/favicon/apple-touch-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="36x36"
-        href="https://karon.jp/karoearth/favicon/android-chrome-36x36.png">
-    <link rel="icon" type="image/png" sizes="48x48"
-        href="https://karon.jp/karoearth/favicon/android-chrome-48x48.png">
-    <link rel="icon" type="image/png" sizes="72x72"
-        href="https://karon.jp/karoearth/favicon/android-chrome-72x72.png">
-    <link rel="icon" type="image/png" sizes="96x96"
-        href="https://karon.jp/karoearth/favicon/android-chrome-96x96.png">
-    <link rel="icon" type="image/png" sizes="128x128"
-        href="https://karon.jp/karoearth/favicon/android-chrome-128x128.png">
-    <link rel="icon" type="image/png" sizes="144x144"
-        href="https://karon.jp/karoearth/favicon/android-chrome-144x144.png">
-    <link rel="icon" type="image/png" sizes="152x152"
-        href="https://karon.jp/karoearth/favicon/android-chrome-152x152.png">
-    <link rel="icon" type="image/png" sizes="192x192"
-        href="https://karon.jp/karoearth/favicon/android-chrome-192x192.png">
-    <link rel="icon" type="image/png" sizes="256x256"
-        href="https://karon.jp/karoearth/favicon/android-chrome-256x256.png">
-    <link rel="icon" type="image/png" sizes="384x384"
-        href="https://karon.jp/karoearth/favicon/android-chrome-384x384.png">
-    <link rel="icon" type="image/png" sizes="512x512"
-        href="https://karon.jp/karoearth/favicon/android-chrome-512x512.png">
-    <link rel="icon" type="image/png" sizes="36x36" href="https://karon.jp/karoearth/favicon/icon-36x36.png">
-    <link rel="icon" type="image/png" sizes="48x48" href="https://karon.jp/karoearth/favicon/icon-48x48.png">
-    <link rel="icon" type="image/png" sizes="72x72" href="https://karon.jp/karoearth/favicon/icon-72x72.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="https://karon.jp/karoearth/favicon/icon-96x96.png">
-    <link rel="icon" type="image/png" sizes="128x128"
-        href="https://karon.jp/karoearth/favicon/icon-128x128.png">
-    <link rel="icon" type="image/png" sizes="144x144"
-        href="https://karon.jp/karoearth/favicon/icon-144x144.png">
-    <link rel="icon" type="image/png" sizes="152x152"
-        href="https://karon.jp/karoearth/favicon/icon-152x152.png">
-    <link rel="icon" type="image/png" sizes="160x160"
-        href="https://karon.jp/karoearth/favicon/icon-160x160.png">
-    <link rel="icon" type="image/png" sizes="192x192"
-        href="https://karon.jp/karoearth/favicon/icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="196x196"
-        href="https://karon.jp/karoearth/favicon/icon-196x196.png">
-    <link rel="icon" type="image/png" sizes="256x256"
-        href="https://karon.jp/karoearth/favicon/icon-256x256.png">
-    <link rel="icon" type="image/png" sizes="384x384"
-        href="https://karon.jp/karoearth/favicon/icon-384x384.png">
-    <link rel="icon" type="image/png" sizes="512x512"
-        href="https://karon.jp/karoearth/favicon/icon-512x512.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="https://karon.jp/karoearth/favicon/icon-16x16.png">
-    <link rel="icon" type="image/png" sizes="24x24" href="https://karon.jp/karoearth/favicon/icon-24x24.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="https://karon.jp/karoearth/favicon/icon-32x32.png">
-    <link rel="manifest" href="https://karon.jp/karoearth/favicon/manifest.json">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KaroEarth</title>
-
-    <!-- CSSファイルを指定 -->
-    <link rel="stylesheet" type="text/css" href="https://karon.jp/karoearth/global.css">
+  <meta charset="utf-8">
+  <title>Redirecting…</title>
+  <meta http-equiv="refresh" content="0; url=https://site.karoearth.xyz">
+  <link rel="canonical" href="https://site.karoearth.xyz">
 </head>
-
 <body>
-    <!-- Header(上のやつ) -->
-    <header>
-        <!-- 背景の動画 -->
-        <video id="background-video" autoplay loop muted>
-            <source src="video.mp4" type="video/mp4">
-        </video>
-        <!--
-        <a id="mute-button" class="on" onclick="toggleMute()">
-            Sound:<span class="off-text">On</span>|<span class="on-text">Off</span>
-        </a>
-        -->
-        <h1>KaroEarth</h1>
-        <nav>
-            <ul><br class="sp">
-                <li><a href="https://karon.jp/karoearth/index.html">ホーム</a></li>
-                <li><a href="https://karon.jp/karoearth/info.html">情報</a></li>
-                <li><a href="https://karon.jp/karoearth/developer.html">運営</a></li>
-                <li><a href="https://karon.jp/karoearth/rules.html">規約</a></li>
-            </ul>
-        </nav>
-    </header>
-    <div class="empty-space">
-        <p>Welcome to our server!!</p>
-    </div>
-
-    <!-- メインの要素 -->
-    <main>
-        <!--
-        <a href="https://karon.jp/karoearth">
-            <img id="start-image" class="sp" src="logo_sp.png">
-            <img id="start-image" class="pc" src="logo.png">
-            <img id="start-image" class="tb" src="logo_tb.png">
-        </a>
-        -->
-        <div class="fixed-element">
-
-            <section class="scroll-animate-element">
-                <h2>かろEarth</h2>
-                <p>1:1000の縮尺で地球を再現したワールドで人々は国を建て、それぞれの信念に従い国を治める</p>
-            </section>
-
-            <section class="scroll-animate-element">
-                <h2>今までにない体験を...</h2>
-                <p>統合版では珍しいリアルタイムマップ等の独自技術の開発を行い今までにないサービスを提供。新鮮味あふれる時間を楽しめる。</p>
-            </section>
-
-            <!-- 最新のお知らせを3つ書こう -->
-            <section class="scroll-animate-element">
-                <h2>最新情報</h2>
-                <ul>
-                    <li><a href="https://karon.jp/karoearth/articles/0001.html">8/6 1:50頃からのサーバー停止に関する現状報告と謝罪</a></li>
-                </ul>
-            </section>
-
-            <section class="scroll-animate-element">
-                <h2>さぁキミも国を建てよう！</h2>
-                <ul>
-                    <li><a href="https://twitter.com/karonnetwork">公式Twitter</a></li>
-                    <li><a href="https://discord.gg/2uqQjBPKvw">公式Discord</a></li>
-                    <li>リアルタイムマップ Comming Soon...</a></li>
-                </ul>
-            </section>
-
-        </div>
-    </main>
-
-    <!-- Footerを設定 -->
-    <footer class="scroll-animate-element">
-        <p>&copy; 2024 KaronNetWork. All rights reserved.<br>※当サービスは公式のMinecraftサービスではありません。</p>
-    </footer>
-
-    <!-- JavaScriptファイルを指定 -->
-    <script src="https://karon.jp/karoearth/global.js"></script>
+  <p>Redirecting to <a href="https://site.karoearth.xyz">site.karoearth.xyz</a>…</p>
+  <script>
+    (function(){
+      var target = "https://site.karoearth.xyz";
+      try { location.replace(target); } catch(e) { location.href = target; }
+    })();
+  </script>
 </body>
-
 </html>
